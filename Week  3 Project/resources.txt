@@ -1,0 +1,6 @@
+icons
+
+https://fontawesome.com/v5.15/icons?d=gallery&p=2
+
+
+The website should fit nicely on viewport sizes: 1200px, 768px, 375px.

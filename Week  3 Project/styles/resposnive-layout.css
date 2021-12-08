@@ -1,0 +1,471 @@
+/*Change the font-family to something of your liking. It can be a google font or a system font (i.e. Times New Roman)
+headers / subtitles color: #6b6b6b
+paragraph color: #999
+Use fontawesome for free social media icons or dec/hex unicodes
+footer color: #777 / white
+footer background-color: #282828*/
+
+
+
+
+body{
+     margin:0;
+     padding:0;
+     font-family: 'Cinzel', serif;
+}
+
+h3, h2, h4, h5 {
+     color:#6b6b6b;
+}
+
+p{
+     color:#999;
+}
+
+.siteLogo > img{
+     height:35px;
+     width:35px;
+     border-radius:50px;
+}
+
+
+.dsgnr-card > img{
+     height:175px;
+     width:175px;
+}
+
+.site-grid{
+     display:grid;
+     grid-gap:20px;
+     max-width:1200px;
+     margin:auto;
+     
+
+}
+
+.navbar{
+     display:flex;
+     flex-direction:row;
+     /*grid-template-areas:
+     "nav-left nav-right";*/
+}
+
+.nav-logo{
+     width:120px;
+     height:120px;
+}
+
+.navbar ul{
+     list-style:none;
+     display:flex;
+     padding:0;
+     margin-left:auto;
+         
+}
+
+
+.nav-btn a {
+     text-transform:uppercase;
+     display:block;
+     text-align:center;
+     padding:10px;
+     font-size:16px;
+     text-decoration:none;
+     color:#6b6b6b;
+     
+
+}
+
+
+
+.site-header, .team-header{
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     padding:10px;
+     grid-gap:10px;
+}
+
+.site-title, .team-cards{
+     font-size:48px;
+}
+
+.site-header p, .our-team p{
+     width:800px;
+     text-align:center;
+}
+
+.products{
+     display:flex;
+     grid-gap:10px;
+     justify-content:center;
+     align-items:center;
+ 
+}
+
+.products div{
+     width:33%;
+}
+
+.prdct-card h3,.prdct-card p{
+     margin-left:auto;
+     margin-right:auto;
+     width:350px;
+}
+
+.prdct-card img{
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     height:175px;
+     width:350px;
+     margin-left: auto;
+     margin-right: auto;
+     
+}
+
+.dsgnr-grid{
+     display:flex;
+     width:100%;
+     margin:0;
+     justify-content:center;
+     align-items:center;
+     grid-gap:100px;
+}
+
+.dsgnr-card{
+     display:grid;
+     padding:0;
+     justify-content:center;
+     align-items:center;
+
+}
+
+.dsgnr-info ul{
+     display:flex;
+     flex-direction:row;
+     padding:10px;    
+}
+
+.dsgnr-social li{
+     list-style:none;
+     padding:5px;
+     
+}
+
+.social-icon{
+     width:25px;
+     height:25px;
+}
+
+.dsgnr-info{
+     display:grid;
+     padding:0px;
+     grid-auto-rows:auto;
+       
+}
+
+.dsgnr-name{
+     padding:5px;
+     font-size:16px;
+     margin:0px;
+     height:auto;
+    
+}
+
+.dsgnr-title{
+     font-size:16px;
+     margin:0px;
+     height:auto;
+     padding:5px;
+}
+
+.contact-bar{
+     grid-area:contact-bar;
+     justify-content:space-evenly;
+     align-content:center;
+     display:flex;
+     grid-gap:25px;
+     padding:25px;
+     width:100%;
+     height:auto;
+     
+}
+
+.contact-bar > div  {
+     justify-content:center;
+     align-content:center;
+     width:33%;
+}
+
+.contact-card{
+     display:flex;
+     justify-content:space-evenly;
+     height:100px;
+     flex:1;
+}
+
+.footer{
+     display:flex;
+     flex-direction:column;
+     background-color: #282828;
+     color:#777;
+     justify-content: space-evenly;
+     align-items:center;
+     width:100%;
+     padding:20px;
+     
+
+}
+
+.footer-nav li,.email-info li,.phone-info li{
+     list-style:none;
+}
+
+.email-info{
+     display:block;
+     text-align:center;
+     width:33%;
+     
+}
+
+.email-info a, .phone-info a{
+     color:#6b6b6b;
+}
+.email-info a:hover, .phone-info a:hover{
+     color:white;
+}
+
+.addy-info h3, .addy-info li{
+     display:block;
+     text-align:center;
+}
+
+.phone-info li, .phone-info h3 {
+     display:grid;
+     margin-left:auto;
+     margin-right:auto;
+     /*justify-content:center;
+     align-items:center;*/
+     text-align:center;
+     color:#6b6b6b;
+}
+
+.footer-nav{
+     display:flex;
+     width:100%;
+     justify-content:space-evenly;
+     align-content:center;
+     grid-area:footer-nav;
+     
+
+}
+
+.footer-info{
+         
+     display:grid;
+     flex-direction:column;
+     text-align:center;
+     padding:15px;
+}
+
+.footer-info > div{
+     padding:0;
+     height:25px;
+     margin:2px;
+}
+
+.footer-info > p{
+     padding:0;
+     margin:0;
+     font-size:14px;
+}
+
+.footer-nav> li:hover {
+     color:white;
+
+}
+
+@media (max-width:1200px){
+
+     .navbar{
+          display:flex;
+          flex-direction: row;
+          justify-content:center;
+          padding:10px;
+          
+     }
+
+     .site-header, .our-team{
+          width:100%;
+          margin-left:0;
+           
+      }
+
+      .site-header p, .our-team p {
+          text-align:center;
+          width:100%;
+          margin:auto;
+          padding:5px;
+     }
+
+
+      .products, .dsgnr-grid{
+          flex-direction:row;
+          justify-content:center;
+          width:100%;
+          align-items:center;
+          padding:50px;
+          margin-left: 25px;
+          
+     }
+
+
+
+}
+
+
+@media (max-width:768px){
+
+     .navbar{
+          display:flex;
+          flex-direction: row;
+          max-width:725px;
+          justify-content:left;
+          padding:10px;
+          
+     }
+
+     .site-header, .our-team{
+          width:100%;
+          margin-left:0;
+           
+      }
+
+      .site-header p, .our-team p {
+          text-align:center;
+          width:100%;
+          margin:auto;
+          padding:5px;
+     }
+
+
+      .products, .dsgnr-grid{
+          flex-direction:row;
+          justify-content:center;
+          width:100%;
+          align-items:center;
+          padding:50px;
+          margin-left: 25px;
+          
+     }
+
+
+
+}
+
+
+@media (max-width:378px){
+
+     .navbar{
+        display:flex;
+        flex-direction: column;
+        max-width:340px;
+        justify-content:left;
+        padding:10px;
+        
+   }
+
+     .navbar ul{
+          display:block;
+          text-align:left;
+          margin-left:0;
+          padding:0;
+     }
+
+     .nav-btn a {
+          text-align:left;
+          padding:10px;
+          font-size:16px;
+          margin-left:5px;
+     }
+
+     .nav-btn a:hover{
+          color:#000000;
+     }
+
+     .site-header, .our-team{
+         width:340px;
+         margin-left:0;
+          
+     }
+
+     .site-title, .team-cards{
+          text-align:left;
+          width:100%;
+          padding:2px;
+          margin:auto;
+     }
+
+     .site-header p, .our-team p {
+          text-align:left;
+          width:100%;
+     }
+
+     .products, .dsgnr-grid{
+          flex-direction:column;
+          justify-content:left;
+          width:340px;
+          align-items:flex-start;
+          padding:5px;
+          margin:2px;
+          
+     }
+
+     .dsgnr-card{
+          margin:auto;
+     }
+
+     .footer{
+          justify-content:left;
+          width:100%;
+          align-items:center;
+          padding:10px;
+          margin-left:auto;
+          margin-right:auto;
+     }
+
+     .contact-bar{
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          grid-gap:2px;
+          padding:5px;
+          margin-left:auto;
+          margin-right:auto;
+          
+     }
+
+     .contact-bar div{
+          width:100%;
+          justify-content:flex-start;
+          align-items:stretch;
+                    
+     }
+
+     .addy-info >address{
+          display: flex;
+          flex-direction: column;
+          flex-wrapg: wrap;
+          margin-left: 50px;
+          margin-right: 50px;
+          padding: 10px;
+          text-align: center;
+     }
+
+     
+}
+
+
+
+         
